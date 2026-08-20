@@ -23,7 +23,7 @@ detallitos-web/
 
 ## 🚀 Cómo verla localmente
 
-Abrir `index.html` directamente en el navegador, o usar la extensión "Live Server" de VS Code.
+Abrir `index.html` directamente en el navegador.
 
 ## 🛠️ Tecnologías
 
