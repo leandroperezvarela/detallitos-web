@@ -72,7 +72,10 @@
   }
   .logo-img{
     height: 44px;
-    width: auto;
+    width: 44px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--pink);
     display:block;
   }
   .hero-logo{
