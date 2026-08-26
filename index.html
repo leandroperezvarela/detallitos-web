@@ -108,17 +108,23 @@
     <h2>Visitanos o escribinos</h2>
   </div>
 
+  <div class="branch-tabs" role="tablist" aria-label="Sucursales de Detallitos">
+    <button class="branch-tab active" data-branch="centro" role="tab" aria-selected="true">📍 Tilarán Centro</button>
+    <button class="branch-tab" data-branch="mercado" role="tab" aria-selected="false">📍 Detallitos número 2</button>
+  </div>
+
   <div class="contact-wrap">
     <div class="contact-card">
       <h3>Contacto</h3>
       <div class="contact-row"><span class="ic">📞</span> 8673-7167</div>
       <div class="contact-row"><span class="ic">💬</span> WhatsApp disponible</div>
-      <div class="contact-row"><span class="ic">📍</span> Tilarán, Guanacaste, Costa Rica</div>
+      <div class="contact-row"><span class="ic">📍</span> <span id="branchAddress">Tilarán, Guanacaste, Costa Rica</span></div>
       <div class="contact-row"><span class="ic">🎈</span> Artículos de fiesta y Recaudadora Tucán</div>
     </div>
     <div class="map-card">
       <div class="map-embed">
         <iframe
+          id="branchMap"
           src="https://www.google.com/maps?q=10.4747012,-84.9717136&output=embed"
           width="100%" height="220"
           style="border:0;"
@@ -129,7 +135,7 @@
         </iframe>
       </div>
       <p>¡Te esperamos con una sonrisa!</p>
-      <a class="btn-ghost" style="margin-bottom:12px;" href="https://maps.app.goo.gl/6PGja5qdL2MdwHYR8" target="_blank" rel="noopener">🗺️ Ver en Google Maps</a>
+      <a class="btn-ghost" id="branchMapsLink" style="margin-bottom:12px;" href="https://maps.app.goo.gl/6PGja5qdL2MdwHYR8" target="_blank" rel="noopener">🗺️ Ver en Google Maps</a>
       <a class="btn-primary" href="https://wa.me/50686737167" target="_blank" rel="noopener">💬 WhatsApp</a>
     </div>
   </div>

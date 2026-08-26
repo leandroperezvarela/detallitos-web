@@ -377,6 +377,34 @@
     opacity: 0.95;
   }
 
+  /* ---------- Branch tabs ---------- */
+  .branch-tabs{
+    display:flex;
+    justify-content:center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 34px;
+  }
+  .branch-tab{
+    font-family: 'Baloo 2', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--plum);
+    background: #fff;
+    border: 2.5px solid var(--plum);
+    padding: 10px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: transform .15s ease, background .15s ease, color .15s ease;
+  }
+  .branch-tab:hover{ transform: translateY(-2px); }
+  .branch-tab.active{
+    background: var(--pink);
+    color: #fff;
+    border-color: var(--pink-deep);
+    box-shadow: 0 4px 0 var(--pink-deep);
+  }
+
   /* ---------- Contact ---------- */
   .contact-wrap{
     display:grid;
