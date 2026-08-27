@@ -3,11 +3,15 @@
   const branches = {
     centro: {
       address: 'Tilarán, Guanacaste, Costa Rica',
+      phone: '8673-7167',
+      whatsapp: '50686737167',
       mapSrc: 'https://www.google.com/maps?q=10.4747012,-84.9717136&output=embed',
       mapsLink: 'https://maps.app.goo.gl/6PGja5qdL2MdwHYR8'
     },
     mercado: {
       address: '50 metros norte del Mercado Municipal, Tilarán, Guanacaste',
+      phone: '7134-8743',
+      whatsapp: '50671348743',
       mapSrc: 'https://www.google.com/maps?q=' + encodeURIComponent('50 metros norte del Mercado Municipal de Tilarán, Guanacaste, Costa Rica') + '&output=embed',
       mapsLink: 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent('Mercado Municipal de Tilarán, Guanacaste, Costa Rica')
     }
@@ -15,6 +19,8 @@
 
   const tabs = document.querySelectorAll('.branch-tab');
   const addressEl = document.getElementById('branchAddress');
+  const phoneEl = document.getElementById('branchPhone');
+  const whatsappEl = document.getElementById('branchWhatsapp');
   const mapEl = document.getElementById('branchMap');
   const mapsLinkEl = document.getElementById('branchMapsLink');
 
@@ -28,6 +34,8 @@
       tab.setAttribute('aria-selected','true');
 
       addressEl.textContent = data.address;
+      phoneEl.textContent = data.phone;
+      whatsappEl.href = 'https://wa.me/' + data.whatsapp;
       mapEl.src = data.mapSrc;
       mapsLinkEl.href = data.mapsLink;
     });
