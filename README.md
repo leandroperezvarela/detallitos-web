@@ -33,9 +33,9 @@ Abrir `index.html` directamente en el navegador.
 
 ## 📋 Próximos pasos
 
-- [ ] Agregar logo real y fotos de productos
+- [ ] Agregar fotos de productos
 - [ ] Agregar precios
-- [ ] Formulario de contacto funcional
+- [ ] Sobre nosotros
 - [ ] Dominio propio
 
 ## 👤 Autor
